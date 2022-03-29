@@ -40,7 +40,14 @@ function clickHandler() {
     var qty = Number(stocksQuantity.value);
     var curr = Number(currentPrice.value);
 
-    calculateProfitAndLoss(ip, qty, curr);
+    if(ip&&qty&&curr) {
+        calculateProfitAndLoss(ip, qty, curr);
+    }
+    else {
+        msgColor("none");
+        
+        showMsg("Please fill all the details!!");
+    }    
 }
 
 checkBtn.addEventListener("click", clickHandler);
