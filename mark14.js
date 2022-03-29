@@ -9,17 +9,26 @@ function calculateProfitAndLoss(initial, quantity, current) {
         var loss = (initial - current)*quantity;
         var lossPercentage = (loss/initial)*100;
 
-        showMsg(`Your total Loss is ${loss} by ${lossPercentage.toFixed(2)}%`);
+        msgColor("red");
+
+        showMsg(`Your total Loss is ${loss} by ${lossPercentage.toFixed(2)}%.`);
     }
     else if(initial < current) {
         var profit = (current - initial)*quantity;
         var profitPercentage = (profit/initial)*100;
 
-        showMsg(`Your total Profit is ${profit} by ${profitPercentage.toFixed(2)}%`);
+        msgColor("green");
+
+        showMsg(`Your total Profit is ${profit} by ${profitPercentage.toFixed(2)}%.`);
     }
     else {
-        showMsg(`No pain no gain, No gain no pain`);
+        msgColor("white");
+        showMsg(`No pain no gain, No gain no pain!`);
     }
+}
+
+function msgColor(color) {
+    outputMsg.style.color = color;
 }
 
 function showMsg(msg) {
