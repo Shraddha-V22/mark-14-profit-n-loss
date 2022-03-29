@@ -44,8 +44,7 @@ function clickHandler() {
         calculateProfitAndLoss(ip, qty, curr);
     }
     else {
-        msgColor("none");
-        
+        msgColor("white");
         showMsg("Please fill all the details!!");
     }    
 }
