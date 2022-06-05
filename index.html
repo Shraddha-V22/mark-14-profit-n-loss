@@ -10,28 +10,45 @@
 </head>
 
 <body>
-    <h1>Stocks Profit and Loss Calculator</h1>
+    <header id="header">
+        <h1>Stocks Profit and Loss Calculator</h1>
+    </header>
+    
+    <main id="main">
+        <label for="initial-price">Initial Price
+            <input id="initial-price" type="number" placeholder="Enter the Initial Price">
+        </label>
 
-    <label for="initial-price">Initial Price
-        <input id="initial-price" type="number" placeholder="Enter the Initial Price">
-    </label>
+        <label for="stocks-quantity">Quantity of Stocks
+            <input id="stocks-quantity" type="number" placeholder="Enter Quantity">
+        </label>
 
-    <label for="stocks-quantity">Quantity of Stocks
-        <input id="stocks-quantity" type="number" placeholder="Enter Quantity">
-    </label>
+        <label for="current-price">Current Price
+            <input id="current-price" type="number" placeholder="Enter the Current Price">
+        </label>
 
-    <label for="current-price">Current Price
-        <input id="current-price" type="number" placeholder="Enter the Current Price">
-    </label>
+        <button id="check-btn">Tell Me!!</button>
 
-    <button id="check-btn">Tell Me!!</button>
-
-    <div id="output"></div>
-
+        <div id="output"></div>
+    </main>
     <footer id="footer">
-        <a href="https://github.com/Shraddha-V22/mark-14-profit-n-loss" target="_blank">
-            <ion-icon name="logo-github" size="large" id="logo"></ion-icon>
-        </a>
+        <ul id="links-social">
+            <li class="social">
+                <a class="links" href="https://github.com/Shraddha-V22" target="_blank">
+                    <ion-icon name="logo-github" class="ionicons"></ion-icon>
+                </a>
+            </li>
+            <li class="social">
+                <a class="links" href="https://www.linkedin.com/in/vkarma-shraddha/" target="_blank">
+                    <ion-icon name="logo-linkedin" class="ionicons"></ion-icon>
+                </a>
+            </li>
+            <li class="social">
+                <a class="links" href="https://twitter.com/Shraddha_228" target="_blank">
+                    <ion-icon name="logo-twitter" class="ionicons"></ion-icon>
+                </a>
+            </li>
+        </ul>
     </footer>
 
 
