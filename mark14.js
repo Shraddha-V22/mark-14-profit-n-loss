@@ -7,7 +7,7 @@ const outputMsg = document.querySelector("#output");
 function calculateProfitAndLoss(initial, quantity, current) {
     if(initial > current) {
         var loss = (initial - current)*quantity;
-        var lossPercentage = (loss/initial)*100;
+        var lossPercentage = (loss/(initial * quantity))*100;
 
         msgColor("red");
 
@@ -15,7 +15,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
     }
     else if(initial < current) {
         var profit = (current - initial)*quantity;
-        var profitPercentage = (profit/initial)*100;
+        var profitPercentage = (profit/(initial * quantity))*100;
 
         msgColor("green");
 
